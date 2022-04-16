@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
         if (err) console.log(err)
     })
 
-    const defaultResponse = '<h1>Full Cycle Rocks</h1>'
+    const defaultResponse = '<h1>Full Cycle Rocks!</h1>'
 
     connection.query("SELECT nome FROM pessoa ORDER BY nome ASC", (err, result) => {
 
